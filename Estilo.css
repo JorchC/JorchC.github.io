@@ -1,0 +1,240 @@
+/*Tabla de contenido
+1. Body
+2. Barral de íconos-Menú
+3. Foto de Presentación (+responsive)
+4. Cuerpo Principal (+textos)
+5. Formación académica
+6. Competencia y habilidades
+7. Contacto-cuestionario
+8. Ubicación Maps (+responsive)
+9. Responsive (body, menú)
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Exo+2:wght@200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+
+body {
+
+    /*color de fondo - Texto - */
+    background-color: rgb(36, 50, 56);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    margin: 0;
+}
+
+/*ELEMENTO BARRA DE ICONOS-MENU*/
+
+/* ubicación de barra */
+
+
+.barra_iconos {
+  background-color: rgb(0,77,65);
+  overflow: auto;
+  position:inherit;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  
+}
+
+
+/* estilo links*/
+
+.barra_iconos a {
+  display: inline-block;
+  list-style-type: none;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+/* estilo link activo */
+.barra_iconos a.active {
+  background-color: rgb(6, 144, 225);
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: #8bcd227d;
+  color: gold;
+  text-shadow:  0px 0px 9px white;
+}
+
+
+
+/*F O T O     P R E S E N T A C I Ó N*/
+
+@media only screen and (min-width: 768px){
+  .fotoperfil{
+    display: block;
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+
+}
+}
+
+@media only screen and (max-width: 767px){
+  .fotoperfil{
+    display: block;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+}
+
+
+
+/*C U E R P O    P R I N C I P A L*/
+.principal {
+  margin-bottom: 200px;
+
+}
+
+
+/*texto principal (Nombre Persona CV)*/
+
+.texto-h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(255,139,44);
+    text-align: center;
+    text-shadow: 2px 2px rgb(20,96,183);
+}
+
+/*texto secundario (Frase/objetivo/etc...)*/
+.texto-h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color:rgb(159,157,90);
+  text-align: center;
+  width: 85%;
+  margin: auto;
+  padding-top: 20px
+  }
+
+/*texto terciario (Frase/objetivo/etc...)*/
+.texto-h3 {
+  font-family: 'DM Sans',sans-serif;
+  color:rgb(165,191,172);
+  text-align: center;
+  width: 85%;
+  margin: auto;
+  }
+  
+/*texto parrafos (Frase/objetivo/etc...)*/
+.formulario{
+  font-family: 'DM Sans',sans-serif;
+  color:rgb(165,191,172);
+  text-align:auto;
+  width: 70%;
+  margin: center;
+  }
+  
+
+
+/* F O R M A C I Ó N    A C A D É M I C A*/
+
+.FORMACION_ACADEMICA{
+  margin-top: 100px;
+}
+
+
+
+/* C O M P E T E N C I A    Y     H A B I L I D A D E S */
+.HABILIDADES {
+  margin-top: 100px;
+}
+
+
+
+/* C O N T A C T O - C U E S T I O N A R I O */
+
+.contacto{
+  margin-top: 100px;
+}
+
+
+
+
+ /* U B I C A C I Ó N - M A P S */
+
+ @media only screen and (min-width: 768px){
+  .UBICACION-CELU{
+    display: none;
+  }
+  .UBICACION-PC{
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+/* B O T Ó N    A R R I B A */
+#Arriba {
+  bottom: 30px;
+  font-size: 30px;
+  height: 40px;
+  line-height: 40px;
+  right: 100px;
+  text-align: center;
+  border-radius: 5px;
+  width: 40px;
+  background: #004d41;
+}
+
+
+
+}
+@media only screen and (max-width: 767px){
+  .UBICACION-PC{
+    display: none;
+  }
+  .UBICACION-CELU{
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+
+
+
+  
+  /* ESTILO PARA CELU - OTROS */
+@media only screen and (max-width: 767px){
+  
+  body {
+
+    /*color de fondo - Texto - */
+    background-color: rgb(29, 9, 60);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    margin: 0;}
+
+    /*ELEMENTO BARRA DE ICONOS-MENU*/
+
+/* ubicación de barra */
+.barra_iconos {
+  background-color: rgb(14, 48, 6);
+  overflow: auto;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+}
+
+/* estilo links */
+.barra_iconos a {
+  float: center;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+
+
+
+} 
+}
